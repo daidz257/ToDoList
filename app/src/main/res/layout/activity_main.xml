@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".MainActivity">
+
+    <SearchView
+        android:id="@+id/searchView_home"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:iconifiedByDefault="false"
+        android:queryHint="Tìm kiếm"
+        android:background="@color/gray"
+        android:searchHintIcon="@android:color/white"
+        >
+
+    </SearchView>
+
+    <FrameLayout
+        android:layout_gravity="center|center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/searchView_home"
+        >
+
+        <ListView
+            android:id="@+id/listviewCongViec"
+            android:layout_width="match_parent"
+            android:layout_height="520dp"
+            android:layout_margin="10dp" />
+
+        <ImageView
+            android:id="@+id/img_add"
+            android:layout_gravity="center|bottom"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/plus3" />
+    </FrameLayout>
+
+
+</RelativeLayout>
